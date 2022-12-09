@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Block</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5af883ac03.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="game"></div>
+        <div id="score">0</div>
+        <div id="instructions">Click (or press the spacebar) to place the block</div>
+        <div class="game-over">
+            <h2>Game Over</h2>
+            <p>You did greatm you're the bast.</p>
+            <p>Click or spacebar to start again</p>
+        </div>
+        <div class="game-ready">
+            <div id="start-button">Start</div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="setting">
+        <p> <i class="fa-solid fa-gear"></i> Game Setting</p>
+    </div>
+    <div class="modal hidden">
+        <div id="pop-backgrounnd"></div>
+        <div id="setting-pop">
+            <div class="slide-box">
+                <span>speed</span> 
+                <div id="slider" class="slider">
+                    <div class="thumb"></div>
+                </div>
+            </div>
+            <div class="color-box">
+                <div id="area1" class="area"></div>
+                <input id="color" type="color" value="#333344">
+                <button class="color-button">change</button>
+            </div>
+            <div class="close-button">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </div>
+    <script async src="script.js" type="module" defer></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.min.js"></script>
+</body>
+</html>
